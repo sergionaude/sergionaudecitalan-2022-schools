@@ -16,8 +16,7 @@ import kotlinx.coroutines.launch
 
 class SchoolsViewModel: ViewModel() {
 
-    private val _state: MutableLiveData<StateResults> =
-        MutableLiveData(StateResults.LOADING)
+    private val _state: MutableLiveData<StateResults> = MutableLiveData(StateResults.LOADING)
     val state: LiveData<StateResults> get() = _state
 
     lateinit var schoolDetails: ResultsSchoolDetails
